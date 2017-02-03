@@ -214,6 +214,7 @@ body {
   font-size: calc(42px + (72 - 42) * ((100vw - 480px) / (960 - 480)));
   text-transform: uppercase;
   line-height: 0.8em;
+  margin-top: -0.65em;
 }
 
 .love__text {
@@ -222,7 +223,7 @@ body {
 
 .love__btn {
   position: relative;
-  top: -20px;
+  top: -19px;
   width: 217px;
   height: 81px;
   padding-top: 20px;
@@ -369,15 +370,34 @@ body {
   color: #fff;
   text-align: center;
   border: 20px solid rgba(255, 255, 255, 0.15);
+  border-top: none;
   margin-top: 109px;
   padding: 0 5%;
+}
+
+.modnakarta:before, .modnakarta:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  width: 15.5%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.modnakarta:after {
+  left: 84.56%;
+  right: 0;
+  margin-right: 0;
 }
 
 .modnakarta__title {
   font-family: "Nautilus Pompilius", sans-serif;
   font-size: 48px;
   font-size: calc(24px + (48 - 24) * ((100vw - 480px) / (960 - 480)));
-  margin-top: -1.3em;
+  margin-top: -1em;
   margin-bottom: 0.25em;
 }
 
@@ -444,7 +464,7 @@ body {
   text-align: center;
   position: relative;
   color: #fff;
-  top: -80px;
+  top: -60px;
 }
 
 .topline__love {
