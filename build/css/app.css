@@ -108,42 +108,42 @@ html {
 
 @font-face {
   font-family: "Nautilus Pompilius";
-  src: url("../fonts/NautilusPompilius.woff2") format("woff2"), url("../fonts/NautilusPompilius.woff") format("woff");
+  src: url("fonts/NautilusPompilius.woff2") format("woff2"), url("fonts/NautilusPompilius.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Helvetica Neue LT Std";
-  src: url("../fonts/HelveticaNeueLTStd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTStd.woff") format("woff");
+  src: url("fonts/HelveticaNeueLTStd.woff2") format("woff2"), url("fonts/HelveticaNeueLTStd.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Helvetica Neue Cyr Black";
-  src: url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Black.woff") format("woff");
+  src: url("fonts/HelveticaNeueCyr-Black.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Black.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Museo Sans Cyrl";
-  src: url("../fonts/MuseoSansCyrl.woff2") format("woff2"), url("../fonts/MuseoSansCyrl.woff") format("woff");
+  src: url("fonts/MuseoSansCyrl.woff2") format("woff2"), url("fonts/MuseoSansCyrl.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "FreeSet";
-  src: url("../fonts/Freeset.woff2") format("woff2"), url("../fonts/Freeset.woff") format("woff");
+  src: url("fonts/Freeset.woff2") format("woff2"), url("fonts/Freeset.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Kizo";
-  src: url("../fonts/Kizo.woff2") format("woff2"), url("../fonts/Kizo.woff") format("woff");
+  src: url("fonts/Kizo.woff2") format("woff2"), url("fonts/Kizo.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -219,9 +219,12 @@ body {
 
 .love__text {
   font-family: "Museo Sans Cyrl", sans-serif;
+  margin-top: 0.35em;
 }
 
 .love__btn {
+  font-size: 24px;
+  font-size: calc(16px + (24 - 16) * ((100vw - 480px) / (960 - 480)));
   position: relative;
   top: -19px;
   width: 217px;
@@ -232,7 +235,6 @@ body {
   border: none;
   color: #000000;
   font-family: "Museo Sans Cyrl", sans-serif;
-  font-size: 24px;
   font-weight: 700;
   vertical-align: baseline;
 }
@@ -545,6 +547,9 @@ body {
   .love__title{
     font-size: 72px;
   }
+  .love__btn{
+    font-size: 24px;
+  }
   .join{
     font-size: 16px;
   }
@@ -595,6 +600,9 @@ body {
   }
   .love__title{
     font-size: 42px;
+  }
+  .love__btn{
+    font-size: 16px;
   }
   .join{
     font-size: 12px;
