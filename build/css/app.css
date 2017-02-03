@@ -1,0 +1,613 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("fonts/iconfont.eot");
+  src: url("fonts/iconfont.eot?#iefix") format("eot"), url("fonts/iconfont.woff2") format("woff2"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon-facebook:before {
+  content: "";
+}
+
+.icon-facebook {
+  width: 0.53em;
+  height: 1em;
+  fill: #000;
+}
+
+@font-face {
+  font-family: "Nautilus Pompilius";
+  src: url("../fonts/NautilusPompilius.woff2") format("woff2"), url("../fonts/NautilusPompilius.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("../fonts/HelveticaNeueLTStd.woff2") format("woff2"), url("../fonts/HelveticaNeueLTStd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Black";
+  src: url("../fonts/HelveticaNeueCyr-Black.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl.woff2") format("woff2"), url("../fonts/MuseoSansCyrl.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FreeSet";
+  src: url("../fonts/Freeset.woff2") format("woff2"), url("../fonts/Freeset.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kizo";
+  src: url("../fonts/Kizo.woff2") format("woff2"), url("../fonts/Kizo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #131313;
+  font-size: calc(16px + (26 - 16) * ((100vw - 480px) / (1366 - 480)));
+  line-height: 1.4;
+}
+
+.wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  max-width: 954px;
+  margin: 0 auto;
+}
+
+.content {
+  height: 3000px;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.header {
+  background-color: #000000;
+  min-height: 71px;
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+  width: 166px;
+  height: 35px;
+}
+
+.logo img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.love {
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+  max-width: 954px;
+  margin: 0 auto;
+}
+
+.love__h1 {
+  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Nautilus Pompilius", sans-serif;
+  font-size: calc(72px + (140 - 72) * ((100vw - 480px) / (960 - 480)));
+  line-height: 1.4em;
+  margin-top: 0.35em;
+}
+
+.love__title {
+  color: #ffffff;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-size: calc(42px + (72 - 42) * ((100vw - 480px) / (960 - 480)));
+  text-transform: uppercase;
+  line-height: 0.8em;
+}
+
+.love__text {
+  font-family: "Museo Sans Cyrl", sans-serif;
+}
+
+.love__btn {
+  position: relative;
+  top: -20px;
+  width: 217px;
+  height: 81px;
+  padding-top: 20px;
+  background-image: linear-gradient(#dfe0e1, #f0f0f0, #e2e3e4, #babcbe);
+  border-radius: 10px;
+  border: none;
+  color: #000000;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  vertical-align: baseline;
+}
+
+.join {
+  font-size: calc(12px + (16 - 12) * ((100vw - 480px) / (960 - 480)));
+  max-width: 585px;
+  padding: 1.3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  margin: 1.8em auto 1.2em;
+  *zoom: 1;
+}
+
+.join:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.join__mail {
+  color: #000;
+  line-height: 2.2em;
+  float: left;
+  padding: 0 0.8em;
+  width: 23.75em;
+  background: #FFF;
+  border-radius: 3px;
+}
+
+.join__mail::-webkit-input-placeholder {
+  color: #000;
+}
+
+.join__mail::-moz-placeholder {
+  color: #000;
+}
+
+.join__mail:-ms-input-placeholder {
+  color: #000;
+}
+
+.join__mail::placeholder {
+  color: #000;
+}
+
+.join__btn {
+  font-weight: bold;
+  width: 141px;
+  height: 36px;
+  float: right;
+  background-color: #00b83b;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 1px;
+}
+
+.counter {
+  margin: 0 auto;
+  text-align: center;
+  *zoom: 1;
+}
+
+.counter:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.counter__title {
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: bold;
+}
+
+.counter__item {
+  *zoom: 1;
+  display: inline-block;
+  text-align: center;
+}
+
+.counter__item:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.counter__number {
+  float: left;
+  margin: 0 0.5px;
+  font-size: 26px;
+  width: 35px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 5px;
+  background-image: linear-gradient(#bebebf 0%, #bebebf 50%, #e1e1e2 50%, #e1e1e2 100%);
+  overflow: hidden;
+  color: #000;
+}
+
+.counter__name {
+  font-size: 14px;
+}
+
+.counter__separator {
+  display: inline-block;
+  position: relative;
+  height: 60px;
+}
+
+.counter__separator:before, .counter__separator:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 5px;
+  background-color: #818181;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 25%;
+}
+
+.counter__separator:after {
+  top: 60%;
+}
+
+.modnakarta {
+  max-width: 954px;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  border: 20px solid rgba(255, 255, 255, 0.15);
+  margin-top: 109px;
+  padding: 0 5%;
+}
+
+.modnakarta__title {
+  font-family: "Nautilus Pompilius", sans-serif;
+  font-size: 48px;
+  font-size: calc(24px + (48 - 24) * ((100vw - 480px) / (960 - 480)));
+  margin-top: -1.3em;
+  margin-bottom: 0.25em;
+}
+
+.modnakarta__head {
+  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Nautilus Pompilius", sans-serif;
+  font-family: "Nautilus Pompilius", sans-serif;
+  font-size: 60px;
+  font-size: calc(30px + (60 - 30) * ((100vw - 480px) / (960 - 480)));
+}
+
+.modnakarta__head span {
+  font-size: 110px;
+  font-size: calc(55px + (110 - 55) * ((100vw - 480px) / (960 - 480)));
+}
+
+.modnakarta__text {
+  margin: 0.5em auto;
+  text-align: left;
+  font-family: "Helvetica Neue LT Std", sans-serif;
+  color: #ffffff;
+  font-size: 19px;
+  font-size: calc(15px + (19 - 15) * ((100vw - 480px) / (960 - 480)));
+  font-weight: 400;
+}
+
+.modnakarta__text span {
+  color: #fd586e;
+  font-size: 22px;
+  font-size: calc(16px + (22 - 16) * ((100vw - 480px) / (960 - 480)));
+  font-weight: 700;
+}
+
+.modnakarta__text .is-big {
+  font-size: 25px;
+  font-size: calc(16px + (25 - 16) * ((100vw - 480px) / (960 - 480)));
+}
+
+.modnakarta__bonus {
+  text-align: left;
+  color: #31e4ff;
+  font-family: "Helvetica Neue Cyr Black", sans-serif;
+  font-size: 17px;
+  font-size: calc(14px + (17 - 14) * ((100vw - 480px) / (960 - 480)));
+}
+
+.modnakarta__btn {
+  background-color: #ff008f;
+  width: 10em;
+  height: 2.41em;
+  line-height: 2.41em;
+  font-size: 22px;
+  font-size: calc(16px + (22 - 16) * ((100vw - 480px) / (960 - 480)));
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 1.2em auto 1.7em;
+}
+
+.topline {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  top: -80px;
+}
+
+.topline__love {
+  font-family: "FreeSet", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.topline__love:after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  background-image: url("../img/sprite.png");
+  width: 35px;
+  height: 28px;
+  background-position: 0px 0px;
+  margin-left: 5px;
+}
+
+.topline__sign {
+  position: relative;
+  top: 14px;
+  font-family: "Kizo", sans-serif;
+  font-size: 77px;
+  font-weight: 400;
+  margin: 0 -5px;
+}
+
+.topline__name {
+  color: #31e4ff;
+  font-family: "FreeSet", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.dates {
+  max-width: 954px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-family: "Museo Sans Cyrl", sans-serif;
+}
+
+.dates__title {
+  font-size: 28px;
+  font-size: calc(18px + (28 - 18) * ((100vw - 480px) / (960 - 480)));
+  font-weight: 700;
+  line-height: 2.2em;
+}
+
+.date-btn {
+  display: inline-block;
+  margin: 5px 15px;
+  color: #a90317;
+  font-size: 24px;
+  font-size: calc(14px + (24 - 14) * ((100vw - 480px) / (960 - 480)));
+  font-weight: 900;
+  line-height: 2.6em;
+  width: 9em;
+  height: 2.6em;
+  border-radius: 10px;
+  background-color: #d4d5d6;
+}
+
+.date-btn.is-active {
+  color: #000000;
+  opacity: 0.8;
+  font-weight: 700;
+}
+
+@media (min-width: 960px){
+  .love__h1{
+    font-size: 140px;
+  }
+  .love__title{
+    font-size: 72px;
+  }
+  .join{
+    font-size: 16px;
+  }
+  .modnakarta__title{
+    font-size: 48px;
+  }
+  .modnakarta__head{
+    font-size: 60px;
+  }
+  .modnakarta__head span{
+    font-size: 110px;
+  }
+  .modnakarta__text{
+    font-size: 19px;
+  }
+  .modnakarta__text span{
+    font-size: 22px;
+  }
+  .modnakarta__text .is-big{
+    font-size: 25px;
+  }
+  .modnakarta__bonus{
+    font-size: 17px;
+  }
+  .modnakarta__btn{
+    font-size: 22px;
+  }
+  .dates__title{
+    font-size: 28px;
+  }
+  .date-btn{
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1366px){
+  body{
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px){
+  body{
+    font-size: 16px;
+  }
+  .love__h1{
+    font-size: 72px;
+  }
+  .love__title{
+    font-size: 42px;
+  }
+  .join{
+    font-size: 12px;
+  }
+  .modnakarta__title{
+    font-size: 24px;
+  }
+  .modnakarta__head{
+    font-size: 30px;
+  }
+  .modnakarta__head span{
+    font-size: 55px;
+  }
+  .modnakarta__text{
+    font-size: 15px;
+  }
+  .modnakarta__text span{
+    font-size: 16px;
+  }
+  .modnakarta__text .is-big{
+    font-size: 16px;
+  }
+  .modnakarta__bonus{
+    font-size: 14px;
+  }
+  .modnakarta__btn{
+    font-size: 16px;
+  }
+  .dates__title{
+    font-size: 18px;
+  }
+  .date-btn{
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

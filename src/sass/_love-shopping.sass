@@ -1,0 +1,113 @@
+.love
+	text-align: center
+	overflow: hidden
+	color: #fff
+	+cw
+	// background-image: url(../img/heart-bg.png) 
+	// background-repeat: no-repeat
+	// background-position: center
+	
+	&__h1
+		+love-text
+		+css-lock(72, 140, 480, 960)
+		// font-size: 140px
+		line-height: 1.4em 
+		margin-top: 0.35em
+		// margin-bottom: -0.33em
+	&__title
+		color: #ffffff
+		+HN
+		+css-lock(42, 72, 480, 960)
+		// font-size: 72px
+		text-transform: uppercase
+		line-height: 0.8em 
+	&__text
+		+MSC
+	&__btn
+		position: relative
+		top: -20px 
+		width: 217px
+		height: 81px
+		padding-top: 20px 
+		background-image: linear-gradient(#dfe0e1, #f0f0f0, #e2e3e4, #babcbe)
+		border-radius: 10px
+		border: none 
+		color: #000000
+		+MSC
+		font-size: 24px
+		font-weight: 700
+		vertical-align: baseline
+
+
+//------------join form style------------
+.join
+	+css-lock(12, 16, 480, 960)
+	max-width: 585px
+	padding: 1.3em
+	background-color: rgba(0,0,0,0.5)
+	border-radius: 3px
+	margin: 1.8em auto 1.2em
+	+clr
+	&__mail
+		color: #000 
+		line-height: 2.2em 
+		float: left
+		padding: 0 0.8em
+		width: em(380)
+		background: #FFF
+		border-radius: 3px
+		+placeholder-color(#000)
+	&__btn
+		font-weight: bold
+		width: 141px
+		height: 36px  
+		float: right
+		background-color: #00b83b
+		color: #fff
+		text-transform: uppercase
+		border-radius: 1px 
+		// +css-lock(16)
+		
+//---------------------counter style---------------------------
+.counter
+	margin: 0 auto 
+	text-align: center
+	+clr
+	&__title
+		font-size: 16px 
+		line-height: 1.8em
+		font-weight: bold
+	&__item
+		+clr
+		display: inline-block
+		text-align: center
+	&__number
+		float: left
+		margin: 0 0.5px 
+		font-size: 26px 
+		width: 35px
+		height: 46px
+		line-height: 46px 
+		border-radius: 5px 
+		background-image: linear-gradient(#bebebf 0%, #bebebf 50%, #e1e1e2 50%, #e1e1e2 100%) 
+		overflow: hidden 
+		color: #000
+	&__name
+		font-size: 14px 
+	
+	&__separator
+		display: inline-block
+		position: relative
+		height: 60px
+		// background-color: green 
+		&:before, &:after
+			content: ""
+			display: block
+			width: 4px
+			height: 5px
+			background-color: #818181
+			border-radius: 50%
+			+vcenter
+			top: 25%
+		&:after
+			top: 60% 
