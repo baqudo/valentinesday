@@ -2,11 +2,14 @@
 	text-align: center
 	overflow: hidden
 	color: #fff
-	+cw
+
 	// background-image: url(../img/heart-bg.png) 
 	// background-repeat: no-repeat
 	// background-position: center
-	
+	position: relative
+	&__inner
+		position: relative
+		+cw
 	&__h1
 		+love-text
 		+css-lock(72, 140, 480, 960)
@@ -42,7 +45,18 @@
 		font-weight: 700
 		vertical-align: baseline
 
-
+//----------------video--------------------
+.overlay
+	position: absolute
+	width: 100%
+	height: 100%
+		// z-index: 0 
+	video
+		position: relative
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
 //------------join form style------------
 .join
 	+css-lock(12, 16, 480, 960)
@@ -77,6 +91,7 @@
 	margin: 0 auto 
 	text-align: center
 	+clr
+	position: relative
 	&__title
 		font-size: 16px 
 		line-height: 1.8em
