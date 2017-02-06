@@ -13,12 +13,13 @@
   </head>
   <body>
 
+    {% include "partials/_header.html" %} 
     <!-- BEGIN content -->
     <div class="content">
       {% block content %}{% endblock %}
     </div>
     <!-- END content -->
-
+    {% include "partials/_footer.html" %}
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->

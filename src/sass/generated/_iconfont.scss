@@ -9,7 +9,27 @@
   font-style: normal;
 }
 
-$icon-facebook: "\EA01";
+$icon-24_7: "\EA01";
+$icon-account: "\EA02";
+$icon-cart_icon: "\EA03";
+$icon-facebook: "\EA04";
+$icon-global_icon: "\EA05";
+$icon-global_icon_active: "\EA06";
+$icon-help: "\EA07";
+$icon-login17: "\EA08";
+$icon-logo: "\EA09";
+$icon-mhelp: "\EA0A";
+$icon-mk: "\EA0B";
+$icon-mk_card: "\EA0C";
+$icon-new-pink: "\EA0D";
+$icon-new: "\EA0E";
+$icon-phone: "\EA0F";
+$icon-sale_icon: "\EA10";
+$icon-sale_icon_active: "\EA11";
+$icon-tab: "\EA12";
+$icon-tab_active: "\EA13";
+$icon-user: "\EA14";
+$icon-user_big: "\EA15";
 
 
 %icon {
@@ -28,4 +48,24 @@ $icon-facebook: "\EA01";
   display: inline-block;
 }
 
+.icon-24_7:before { content: $icon-24_7; }
+.icon-account:before { content: $icon-account; }
+.icon-cart_icon:before { content: $icon-cart_icon; }
 .icon-facebook:before { content: $icon-facebook; }
+.icon-global_icon:before { content: $icon-global_icon; }
+.icon-global_icon_active:before { content: $icon-global_icon_active; }
+.icon-help:before { content: $icon-help; }
+.icon-login17:before { content: $icon-login17; }
+.icon-logo:before { content: $icon-logo; }
+.icon-mhelp:before { content: $icon-mhelp; }
+.icon-mk:before { content: $icon-mk; }
+.icon-mk_card:before { content: $icon-mk_card; }
+.icon-new-pink:before { content: $icon-new-pink; }
+.icon-new:before { content: $icon-new; }
+.icon-phone:before { content: $icon-phone; }
+.icon-sale_icon:before { content: $icon-sale_icon; }
+.icon-sale_icon_active:before { content: $icon-sale_icon_active; }
+.icon-tab:before { content: $icon-tab; }
+.icon-tab_active:before { content: $icon-tab_active; }
+.icon-user:before { content: $icon-user; }
+.icon-user_big:before { content: $icon-user_big; }
