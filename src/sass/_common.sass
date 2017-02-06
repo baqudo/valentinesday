@@ -1,31 +1,58 @@
-
 +font('Nautilus Pompilius', NautilusPompilius)
 =NP
 	font-family: "Nautilus Pompilius", sans-serif
+	font-weight: normal 
 
-+font('Helvetica Neue LT Std', HelveticaNeueLTStd)
++font('Helvetica Neue', HelveticaNeueLTStd-BdCn)
 =HN
-	font-family: "Helvetica Neue LT Std", sans-serif
+	font-family: "Helvetica Neue", sans-serif
+	font-weight: normal 
 
 +font('Helvetica Neue Cyr Black', HelveticaNeueCyr-Black)
-=HNc
+=HN-black
 	font-family: "Helvetica Neue Cyr Black", sans-serif
-
-+font('Museo Sans Cyrl', MuseoSansCyrl)
-=MSC
+	font-weight: normal 
+	
++font('Helvetica Neue Cyr Roman', HelveticaNeueCyr-Roman)
+=HN-roman
+	font-family: "Helvetica Neue Cyr Roman", sans-serif
+	font-weight: normal 
+	
++font('Museo Sans Cyrl 500', MuseoSansCyrl)
+=MSC5
 	font-family: "Museo Sans Cyrl", sans-serif
+	font-weight: normal 
+
++font('Museo Sans Cyrl 300', MuseoSansCyrl-300)
+=MSC3
+	font-family: "Museo Sans Cyrl 300", sans-serif
+	font-weight: normal 
+	
++font('Museo Sans Cyrl 700', MuseoSansCyrl-700)
+=MSC7
+	font-family: "Museo Sans Cyrl 700", sans-serif
+	font-weight: normal
+
++font('Museo Sans Cyrl 900', MuseoSansCyrl-900)
+=MSC9
+	font-family: "Museo Sans Cyrl 900", sans-serif
+	font-weight: normal 
+	
+
 
 +font('FreeSet', Freeset)
 =Fs
 	font-family: "FreeSet", sans-serif
-
+	font-weight: normal 
+	
 +font('Kizo', Kizo)
 =K
 	font-family: "Kizo", sans-serif
-
+	font-weight: normal 
+	
 body
   background-color: #131313
-  +css-lock(16, 26, 480, 1366)
+  font-size: 16px 
   line-height: 1.4
 
 .wrapper
@@ -40,10 +67,10 @@ body
 	margin: 0 auto
 
 =love-text
-	background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%)
+	background-image: -webkit-linear-gradient(39deg, #fd586e 40%, #f9579e 60%)
 	-o-background-clip: text 
 	background-clip: text 
 	-webkit-background-clip: text
-	// color: #ffffff
-	color: transparent 
+	-webkit-text-fill-color: transparent
+	color: #fd586e
 	+NP

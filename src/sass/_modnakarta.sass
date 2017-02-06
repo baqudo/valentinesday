@@ -3,14 +3,9 @@
 	position: relative
 	color: #fff
 	text-align: center
-	// width: 950px
-	// height: 532px
 	border: 20px solid rgba(255, 255, 255, 0.15)
 	border-top: none
-
 	padding: 0 5%
-	// overflow: hidden
-	// opacity: 0.15
 	&:before, &:after
 		content: ''
 		display: block
@@ -43,7 +38,6 @@
 	&__text
 		margin: 0.5em auto
 		text-align: left
-		+HN
 		color: #ffffff
 		font-size: 19px
 		+css-lock(15, 19, 480, 960)
@@ -52,16 +46,16 @@
 			color: #fd586e
 			font-size: 22px
 			+css-lock(16, 22, 480, 960)
-			font-weight: 700
+			+HN-black
 		.is-big
 			font-size: 25px
 			+css-lock(16, 25, 480, 960)
 	&__bonus
 		text-align: left
 		color: #31e4ff
-		+HNc
 		font-size: 17px
 		+css-lock(14, 17, 480, 960)
+		margin-right: 5em 
 	&__btn
 		background-color: #ff008f 
 		width: 10em

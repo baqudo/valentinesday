@@ -3,9 +3,6 @@
 	overflow: hidden
 	color: #fff
 	padding-bottom: 109px  
-	// background-image: url(../img/heart-bg.png) 
-	// background-repeat: no-repeat
-	// background-position: center
 	position: relative
 	&__inner
 		position: relative
@@ -26,8 +23,11 @@
 		line-height: 0.8em 
 		margin-top: -0.65em
 	&__text
-		+MSC
+		+MSC3
+		font-size: 28px
+		+css-lock(18,28,480,960)
 		margin-top: 0.35em 
+		font-weight: 300 
 	&__btn
 		font-size: 24px
 		+css-lock(16, 24, 480, 960)
@@ -40,9 +40,7 @@
 		border-radius: 10px
 		border: none 
 		color: #000000
-		+MSC
-
-		font-weight: 700
+		+MSC7
 		vertical-align: baseline
 
 //----------------video--------------------

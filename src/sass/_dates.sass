@@ -2,12 +2,12 @@
 	+cw
 	text-align: center
 	color: #fff 
-	+MSC
+	+MSC7
 	padding-bottom: 10px 
 	&__title
 		font-size: 28px
 		+css-lock(18, 28, 480, 960)
-		font-weight: 700
+		font-weight: normal
 		line-height: 2.2em
 		margin-top: 1.7em 
 	input[type=radio]
@@ -19,7 +19,7 @@
 	color: #a90317
 	font-size: 24px
 	+css-lock(14, 24, 480, 960)
-	font-weight: 900
+	+HN-black
 	line-height: 2.6em
 	width: 9em
 	height: 2.6em
@@ -35,7 +35,7 @@
 #day14:checked ~ label.day-btn14
 	color: #000000
 	opacity: 0.8
-	font-weight: 700
+
 
 #day13:checked ~ .tabs > .tab13, #day14:checked ~ .tabs > .tab14
 	display: block
@@ -59,7 +59,7 @@
 	display: inline-block
 	position: relative
 	width: 20% 
-	+HNc
+	+HN-roman
 	top: -42px
 	&:hover
 		cursor: pointer
@@ -70,7 +70,7 @@
 .timeline-radio#tr4:checked ~ label:nth-of-type(4),
 .timeline-radio#tr5:checked ~ label:nth-of-type(5),
 	+love-text
-	+HNc
+	+HN-roman
 	font-size: 24px
 	&:after
 		content: ""
@@ -87,7 +87,7 @@
 	+vcenter
 	top: -23px
 	+love-text
-	+HNc
+	+HN-roman
 	font-size: 24px
 	&:after
 		content: ""
