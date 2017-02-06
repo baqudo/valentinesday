@@ -1401,6 +1401,10 @@ body {
   margin-top: 1.7em;
 }
 
+.dates input[type=radio] {
+  display: none;
+}
+
 .date-btn {
   display: inline-block;
   margin: 5px 15px;
@@ -1415,69 +1419,124 @@ body {
   background-color: #d4d5d6;
 }
 
-.date-btn.is-active {
+.date-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 5px 1px #fff;
+}
+
+#day13:checked ~ label.day-btn13,
+#day14:checked ~ label.day-btn14 {
   color: #000000;
   opacity: 0.8;
   font-weight: 700;
 }
 
-.date-btn:hover {
-  box-shadow: 0 1px 5px 1px #fff;
+#day13:checked ~ .tabs > .tab13, #day14:checked ~ .tabs > .tab14 {
+  display: block;
+}
+
+#day13:not(:checked) ~ .tabs > .tab13, #day14:not(:checked) ~ .tabs > .tab14 {
+  display: none;
 }
 
 .timeline {
   max-width: 954px;
   margin: 0 auto;
   position: relative;
-  margin-top: 3.05em;
-  margin-bottom: 1.05em;
+  margin-top: 78px;
+  margin-bottom: 36px;
   height: 2px;
   background-color: #979797;
+  font-size: 0;
 }
 
 .timeline-item {
+  font-size: 16px;
   color: #fff;
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  font-family: "Helvetica Neue Cyr Black", sans-serif;
+  top: -42px;
+}
+
+.timeline-item:hover {
+  cursor: pointer;
+}
+
+.timeline-radio#tr1:checked ~ label:nth-of-type(1),
+.timeline-radio#tr2:checked ~ label:nth-of-type(2),
+.timeline-radio#tr3:checked ~ label:nth-of-type(3),
+.timeline-radio#tr4:checked ~ label:nth-of-type(4),
+.timeline-radio#tr5:checked ~ label:nth-of-type(5) {
+  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Nautilus Pompilius", sans-serif;
+  font-family: "Helvetica Neue Cyr Black", sans-serif;
+  font-size: 24px;
+}
+
+.timeline-radio#tr1:checked ~ label:nth-of-type(1):after,
+.timeline-radio#tr2:checked ~ label:nth-of-type(2):after,
+.timeline-radio#tr3:checked ~ label:nth-of-type(3):after,
+.timeline-radio#tr4:checked ~ label:nth-of-type(4):after,
+.timeline-radio#tr5:checked ~ label:nth-of-type(5):after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 40%;
+  position: relative;
+  left: 30%;
+  top: 8px;
+  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+}
+
+.tab13 > .timeline .timeline-item {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  top: -23px;
   background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: "Nautilus Pompilius", sans-serif;
-  font-family: "Museo Sans Cyrl", sans-serif;
-  top: -6px;
+  font-family: "Helvetica Neue Cyr Black", sans-serif;
+  font-size: 24px;
 }
 
-.timeline-item:after {
+.tab13 > .timeline .timeline-item:after {
   content: "";
-  display: inline-block;
+  display: block;
   height: 8px;
-  width: 100%;
+  width: 40%;
   position: relative;
-  top: -14px;
+  left: 30%;
+  top: 8px;
   background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
 }
 
 .tabs {
-  *zoom: 1;
   max-width: 955px;
   margin: 0 auto;
   position: relative;
-}
-
-.tabs:after {
-  content: " ";
-  display: table;
-  clear: both;
+  height: 100%;
 }
 
 .tab {
-  display: block;
   margin: 0 -7px;
+  *zoom: 1;
+}
+
+.tab:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 .tab__item {
@@ -1500,6 +1559,37 @@ body {
 
 .tab__img:hover {
   outline: 2px solid #fd586e;
+}
+
+.tab14 {
+  font-size: 0;
+  display: none;
+}
+
+.tab14 .tab {
+  font-size: 24px;
+  display: none;
+}
+
+.tab14 .timeline {
+  margin-bottom: -4px;
+  margin-top: 77px;
+}
+
+.timeline-radio#tr1:not(:checked) ~ .tab14-06,
+.timeline-radio#tr2:not(:checked) ~ .tab14-10,
+.timeline-radio#tr3:not(:checked) ~ .tab14-12,
+.timeline-radio#tr4:not(:checked) ~ .tab14-16,
+.timeline-radio#tr5:not(:checked) ~ .tab14-20 {
+  display: none;
+}
+
+.timeline-radio#tr1:checked ~ .tab14-06,
+.timeline-radio#tr2:checked ~ .tab14-10,
+.timeline-radio#tr3:checked ~ .tab14-12,
+.timeline-radio#tr4:checked ~ .tab14-16,
+.timeline-radio#tr5:checked ~ .tab14-20 {
+  display: block;
 }
 
 .home-btn {

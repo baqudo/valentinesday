@@ -10,6 +10,9 @@
 		font-weight: 700
 		line-height: 2.2em
 		margin-top: 1.7em 
+	input[type=radio]
+		display: none
+
 .date-btn
 	display: inline-block
 	margin: 5px 15px 
@@ -23,45 +26,88 @@
 	border-radius: 10px
 	background-color: #d4d5d6
 	&.is-active
-		color: #000000
-		opacity: 0.8
-		font-weight: 700
+
 	&:hover
+		cursor: pointer
 		box-shadow: 0 1px 5px 1px #fff
+
+#day13:checked ~ label.day-btn13,
+#day14:checked ~ label.day-btn14
+	color: #000000
+	opacity: 0.8
+	font-weight: 700
+
+#day13:checked ~ .tabs > .tab13, #day14:checked ~ .tabs > .tab14
+	display: block
+	
+#day13:not(:checked) ~ .tabs > .tab13, #day14:not(:checked) ~ .tabs > .tab14
+	display: none
+
 
 .timeline
 	+cw
 	position: relative
-	margin-top: 3.05em 
-	margin-bottom: 1.05em 
+	margin-top: 78px 
+	margin-bottom: 36px 
 	height: 2px
 	background-color: #979797
+	font-size: 0
+
 .timeline-item
+	font-size: 16px 
 	color: #fff 
-	+vcenter
+	display: inline-block
+	position: relative
+	width: 20% 
+	+HNc
+	top: -42px
+	&:hover
+		cursor: pointer
+
+.timeline-radio#tr1:checked ~ label:nth-of-type(1),
+.timeline-radio#tr2:checked ~ label:nth-of-type(2),
+.timeline-radio#tr3:checked ~ label:nth-of-type(3),
+.timeline-radio#tr4:checked ~ label:nth-of-type(4),
+.timeline-radio#tr5:checked ~ label:nth-of-type(5),
 	+love-text
-	+MSC
-	top: -6px
+	+HNc
+	font-size: 24px
 	&:after
 		content: ""
-		display: inline-block
+		display: block
 		height: 8px  
-		width: 100% 
+		width: 40% 
 		position: relative
-		top: -14px 
+		left: 30% 
+		top: 8px 
 		background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%)
-		
 
+
+.tab13 > .timeline .timeline-item
+	+vcenter
+	top: -23px
+	+love-text
+	+HNc
+	font-size: 24px
+	&:after
+		content: ""
+		display: block
+		height: 8px  
+		width: 40% 
+		position: relative
+		left: 30% 
+		top: 8px 
+		background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%)
 //---------------------tabs-----------------------------------------------
 .tabs
-	+clr
 	max-width: 955px
 	margin: 0 auto
 	position: relative
+	height: 100% 
 
 .tab
-	display: block
 	margin: 0 -7px 
+	+clr
 	&__item
 		position: relative
 		float: left
@@ -82,6 +128,7 @@
 +r(605)
 	.tab
 		margin: 0 
+
 	.tab__item
 		width: 48.5% 
 		margin: 0.3% 0.75%
@@ -95,7 +142,34 @@
 			width: 100% 
 			margin: 5px 0
 
+.tab14
+	font-size: 0 
+	display: none
+	.tab
+		font-size: 24px 
+		display: none
+	.timeline
+		margin-bottom: -4px 
+		margin-top: 77px 
 
+
+.timeline-radio#tr1:not(:checked) ~ .tab14-06,
+.timeline-radio#tr2:not(:checked) ~ .tab14-10,
+.timeline-radio#tr3:not(:checked) ~ .tab14-12,
+.timeline-radio#tr4:not(:checked) ~ .tab14-16,
+.timeline-radio#tr5:not(:checked) ~ .tab14-20
+	display: none
+
+
+.timeline-radio#tr1:checked ~ .tab14-06,
+.timeline-radio#tr2:checked ~ .tab14-10,
+.timeline-radio#tr3:checked ~ .tab14-12,
+.timeline-radio#tr4:checked ~ .tab14-16,
+.timeline-radio#tr5:checked ~ .tab14-20
+	display: block
+
+
+//-------------------home-btn----------------------
 .home-btn
 	font-size: 24px 
 	+css-lock(16, 24, 480, 960)
