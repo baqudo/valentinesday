@@ -1048,6 +1048,7 @@ body {
   text-align: center;
   overflow: hidden;
   color: #fff;
+  padding-bottom: 109px;
   position: relative;
 }
 
@@ -1248,7 +1249,6 @@ body {
   text-align: center;
   border: 20px solid rgba(255, 255, 255, 0.15);
   border-top: none;
-  margin-top: 109px;
   padding: 0 5%;
 }
 
