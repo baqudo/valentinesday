@@ -25,3 +25,36 @@
 		color: #000000
 		opacity: 0.8
 		font-weight: 700
+
+.timeline
+	+cw
+	position: relative
+	margin-top: 3.05em 
+	height: 2px
+	background-color: #979797
+.timeline-item
+	color: #fff 
+	+vcenter
+	+love-text
+	+MSC
+	top: -6px
+	&:after
+		content: ""
+		display: inline-block
+		height: 8px  
+		width: 100% 
+		position: relative
+		top: -14px 
+		background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%)
+.home-btn
+	font-size: 24px 
+	+css-lock(16, 24, 480, 960)
+	width: 8.333333em
+	height: 2.125em
+	display: block
+	border-top-right-radius: 3px
+	border-bottom-right-radius: 3px
+	margin: 3.6em auto 2em
+	text-transform: uppercase
+	color: #fff
+	background-color: #ff5e3a  

@@ -165,7 +165,6 @@ body {
 }
 
 .content {
-  height: 3000px;
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -540,6 +539,56 @@ body {
   font-weight: 700;
 }
 
+.timeline {
+  max-width: 954px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 3.05em;
+  height: 2px;
+  background-color: #979797;
+}
+
+.timeline-item {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Nautilus Pompilius", sans-serif;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  top: -6px;
+}
+
+.timeline-item:after {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 100%;
+  position: relative;
+  top: -14px;
+  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+}
+
+.home-btn {
+  font-size: 24px;
+  font-size: calc(16px + (24 - 16) * ((100vw - 480px) / (960 - 480)));
+  width: 8.333333em;
+  height: 2.125em;
+  display: block;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin: 3.6em auto 2em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff5e3a;
+}
+
 @media (min-width: 960px){
   .love__h1{
     font-size: 140px;
@@ -581,6 +630,9 @@ body {
     font-size: 28px;
   }
   .date-btn{
+    font-size: 24px;
+  }
+  .home-btn{
     font-size: 24px;
   }
 }
@@ -636,6 +688,9 @@ body {
   }
   .date-btn{
     font-size: 14px;
+  }
+  .home-btn{
+    font-size: 16px;
   }
 }
 
