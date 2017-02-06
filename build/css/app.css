@@ -314,8 +314,8 @@ html {
 }
 
 @font-face {
-  font-family: "Helvetica Neue LT Std";
-  src: url("fonts/HelveticaNeueLTStd.woff2") format("woff2"), url("fonts/HelveticaNeueLTStd.woff") format("woff");
+  font-family: "Helvetica Neue";
+  src: url("fonts/HelveticaNeueLTStd-BdCn.woff2") format("woff2"), url("fonts/HelveticaNeueLTStd-BdCn.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -328,8 +328,36 @@ html {
 }
 
 @font-face {
-  font-family: "Museo Sans Cyrl";
+  font-family: "Helvetica Neue Cyr Roman";
+  src: url("fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl 500";
   src: url("fonts/MuseoSansCyrl.woff2") format("woff2"), url("fonts/MuseoSansCyrl.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl 300";
+  src: url("fonts/MuseoSansCyrl-300.woff2") format("woff2"), url("fonts/MuseoSansCyrl-300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl 700";
+  src: url("fonts/MuseoSansCyrl-700.woff2") format("woff2"), url("fonts/MuseoSansCyrl-700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl 900";
+  src: url("fonts/MuseoSansCyrl-900.woff2") format("woff2"), url("fonts/MuseoSansCyrl-900.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -350,7 +378,7 @@ html {
 
 body {
   background-color: #131313;
-  font-size: calc(16px + (26 - 16) * ((100vw - 480px) / (1366 - 480)));
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -1059,11 +1087,13 @@ body {
 }
 
 .love__h1 {
-  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+  background-image: -webkit-linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  color: #fd586e;
   font-family: "Nautilus Pompilius", sans-serif;
+  font-weight: normal;
   font-size: calc(72px + (140 - 72) * ((100vw - 480px) / (960 - 480)));
   line-height: 1.4em;
   margin-top: 0.35em;
@@ -1071,7 +1101,8 @@ body {
 
 .love__title {
   color: #ffffff;
-  font-family: "Helvetica Neue LT Std", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: normal;
   font-size: calc(42px + (72 - 42) * ((100vw - 480px) / (960 - 480)));
   text-transform: uppercase;
   line-height: 0.8em;
@@ -1079,8 +1110,12 @@ body {
 }
 
 .love__text {
-  font-family: "Museo Sans Cyrl", sans-serif;
+  font-family: "Museo Sans Cyrl 300", sans-serif;
+  font-weight: normal;
+  font-size: 28px;
+  font-size: calc(18px + (28 - 18) * ((100vw - 480px) / (960 - 480)));
   margin-top: 0.35em;
+  font-weight: 300;
 }
 
 .love__btn {
@@ -1095,8 +1130,8 @@ body {
   border-radius: 10px;
   border: none;
   color: #000000;
-  font-family: "Museo Sans Cyrl", sans-serif;
-  font-weight: 700;
+  font-family: "Museo Sans Cyrl 700", sans-serif;
+  font-weight: normal;
   vertical-align: baseline;
 }
 
@@ -1273,6 +1308,7 @@ body {
 
 .modnakarta__title {
   font-family: "Nautilus Pompilius", sans-serif;
+  font-weight: normal;
   font-size: 48px;
   font-size: calc(24px + (48 - 24) * ((100vw - 480px) / (960 - 480)));
   margin-top: -1em;
@@ -1280,12 +1316,15 @@ body {
 }
 
 .modnakarta__head {
-  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+  background-image: -webkit-linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  color: #fd586e;
   font-family: "Nautilus Pompilius", sans-serif;
+  font-weight: normal;
   font-family: "Nautilus Pompilius", sans-serif;
+  font-weight: normal;
   font-size: 60px;
   font-size: calc(30px + (60 - 30) * ((100vw - 480px) / (960 - 480)));
 }
@@ -1298,7 +1337,6 @@ body {
 .modnakarta__text {
   margin: 0.5em auto;
   text-align: left;
-  font-family: "Helvetica Neue LT Std", sans-serif;
   color: #ffffff;
   font-size: 19px;
   font-size: calc(15px + (19 - 15) * ((100vw - 480px) / (960 - 480)));
@@ -1309,7 +1347,8 @@ body {
   color: #fd586e;
   font-size: 22px;
   font-size: calc(16px + (22 - 16) * ((100vw - 480px) / (960 - 480)));
-  font-weight: 700;
+  font-family: "Helvetica Neue Cyr Black", sans-serif;
+  font-weight: normal;
 }
 
 .modnakarta__text .is-big {
@@ -1320,9 +1359,9 @@ body {
 .modnakarta__bonus {
   text-align: left;
   color: #31e4ff;
-  font-family: "Helvetica Neue Cyr Black", sans-serif;
   font-size: 17px;
   font-size: calc(14px + (17 - 14) * ((100vw - 480px) / (960 - 480)));
+  margin-right: 5em;
 }
 
 .modnakarta__btn {
@@ -1351,6 +1390,7 @@ body {
 
 .topline__love {
   font-family: "FreeSet", sans-serif;
+  font-weight: normal;
   font-size: 38px;
   font-weight: 400;
 }
@@ -1371,6 +1411,7 @@ body {
   position: relative;
   top: 14px;
   font-family: "Kizo", sans-serif;
+  font-weight: normal;
   font-size: 77px;
   font-weight: 400;
   margin: 0 -5px;
@@ -1379,6 +1420,7 @@ body {
 .topline__name {
   color: #31e4ff;
   font-family: "FreeSet", sans-serif;
+  font-weight: normal;
   font-size: 36px;
   font-weight: 400;
   text-decoration: underline;
@@ -1389,14 +1431,15 @@ body {
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  font-family: "Museo Sans Cyrl", sans-serif;
+  font-family: "Museo Sans Cyrl 700", sans-serif;
+  font-weight: normal;
   padding-bottom: 10px;
 }
 
 .dates__title {
   font-size: 28px;
   font-size: calc(18px + (28 - 18) * ((100vw - 480px) / (960 - 480)));
-  font-weight: 700;
+  font-weight: normal;
   line-height: 2.2em;
   margin-top: 1.7em;
 }
@@ -1411,7 +1454,8 @@ body {
   color: #a90317;
   font-size: 24px;
   font-size: calc(14px + (24 - 14) * ((100vw - 480px) / (960 - 480)));
-  font-weight: 900;
+  font-family: "Helvetica Neue Cyr Black", sans-serif;
+  font-weight: normal;
   line-height: 2.6em;
   width: 9em;
   height: 2.6em;
@@ -1428,7 +1472,6 @@ body {
 #day14:checked ~ label.day-btn14 {
   color: #000000;
   opacity: 0.8;
-  font-weight: 700;
 }
 
 #day13:checked ~ .tabs > .tab13, #day14:checked ~ .tabs > .tab14 {
@@ -1456,7 +1499,8 @@ body {
   display: inline-block;
   position: relative;
   width: 20%;
-  font-family: "Helvetica Neue Cyr Black", sans-serif;
+  font-family: "Helvetica Neue Cyr Roman", sans-serif;
+  font-weight: normal;
   top: -42px;
 }
 
@@ -1469,12 +1513,15 @@ body {
 .timeline-radio#tr3:checked ~ label:nth-of-type(3),
 .timeline-radio#tr4:checked ~ label:nth-of-type(4),
 .timeline-radio#tr5:checked ~ label:nth-of-type(5) {
-  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+  background-image: -webkit-linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  color: #fd586e;
   font-family: "Nautilus Pompilius", sans-serif;
-  font-family: "Helvetica Neue Cyr Black", sans-serif;
+  font-weight: normal;
+  font-family: "Helvetica Neue Cyr Roman", sans-serif;
+  font-weight: normal;
   font-size: 24px;
 }
 
@@ -1501,12 +1548,15 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   top: -23px;
-  background-image: linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
+  background-image: -webkit-linear-gradient(39deg, #fd586e 40%, #f9579e 60%);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  color: #fd586e;
   font-family: "Nautilus Pompilius", sans-serif;
-  font-family: "Helvetica Neue Cyr Black", sans-serif;
+  font-weight: normal;
+  font-family: "Helvetica Neue Cyr Roman", sans-serif;
+  font-weight: normal;
   font-size: 24px;
 }
 
@@ -1935,6 +1985,9 @@ body {
   .love__title{
     font-size: 72px;
   }
+  .love__text{
+    font-size: 28px;
+  }
   .love__btn{
     font-size: 24px;
   }
@@ -1973,12 +2026,6 @@ body {
   }
   .home-btn{
     font-size: 24px;
-  }
-}
-
-@media (min-width: 1366px){
-  body{
-    font-size: 26px;
   }
 }
 
@@ -2351,14 +2398,14 @@ body {
 }
 
 @media (max-width: 480px){
-  body{
-    font-size: 16px;
-  }
   .love__h1{
     font-size: 72px;
   }
   .love__title{
     font-size: 42px;
+  }
+  .love__text{
+    font-size: 18px;
   }
   .love__btn{
     font-size: 16px;
